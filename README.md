@@ -11,7 +11,7 @@ Docker running Apache, PHP, Composer, MySQL and PHPMyAdmin.
 2. [Gerando certificado SSL](#certificate)
 
     ```sh
-    openssl req -x509 -sha256 -newkey rsa:2048 -keyout cert.key -out cert.crt -days 365 -nodes
+    docker compose up -d
     ```
 
 3. [Run the application](#run-application)
