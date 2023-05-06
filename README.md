@@ -31,3 +31,18 @@ Docker running Apache, PHP, Composer, MySQL and PHPMyAdmin.
     ```sh
     docker-compose down -v
     ```
+___
+
+## Use Docker commands
+
+### Installing package with composer
+
+```sh
+docker run --rm -v $(pwd)/webapp:/app composer require league/plates
+```
+
+### Updating PHP dependencies with composer
+
+```sh
+docker run --rm -v $(pwd)/webapp:/app composer update
+```
