@@ -38,6 +38,12 @@ ___
 ### Installing package with composer
 
 ```sh
+docker run --rm -v $(pwd)/webapp:/app composer install
+```
+
+### Require package with composer
+
+```sh
 docker run --rm -v $(pwd)/webapp:/app composer require league/plates
 ```
 
