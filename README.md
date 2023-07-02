@@ -4,14 +4,14 @@ Docker running Apache, PHP, Composer, MySQL and PHPMyAdmin.
 
 ## Overview
 
-1. [Configuração inicial](#initial-config)
+1. [Initial Config](#initial-config)
 
-    Altere o arquivo .env com os dados do seu container
+    Change the file .env with your container data
 
-2. [Gerando certificado SSL](#certificate)
+2. [Generating SSL Certificate](#certificate)
 
     ```sh
-    openssl req -x509 -sha256 -newkey rsa:2048 -keyout cert.key -out cert.crt -days 365 -nodes
+    openssl req -x509 -sha256 -newkey rsa:2048 -keyout .docker/php-apache/apache-ssl/cert.key -out .docker/php-apache/apache-ssl/cert.crt -days 365 -nodes
     ```
 
 3. [Run the application](#run-application)
